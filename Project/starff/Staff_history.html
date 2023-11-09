@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFU RIDE</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="/public/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/
+bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/
+bootstrap.bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+   <style>
+        .call-container {
+            align-items: center;
+            background-color: rgb(77, 13, 104);
+            ;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: solid 1px;
+            color: #fff;
+            font-size: 10px;
+        }
+
+        #footer {
+            background-color: rgb(77, 13, 104);
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            color: #FFFFFF;
+        }
+
+        .divider {
+            border-bottom: 1px solid #ccc;
+            /* เส้นขีดด้านล่าง */
+            margin-bottom: 10px;
+            /* ระยะห่างด้านล่าง */
+        }
+
+        .dividerr {
+            border-bottom: 1px solid #ccc;
+            /* เส้นขีดด้านล่าง */
+            margin-bottom: 0px;
+            /* ระยะห่างด้านล่าง */
+        }
+
+        table {
+            border-collapse: collapse;
+            /* รวมขอบของเซลล์เข้าด้วยกัน */
+            width: 100%;
+            /* กว้าง 100% */
+        }
+
+        th {
+            border: 2px solid #000;
+            /* เส้นขอบหนา 1px และสีดำ */
+            padding: 8px;
+            /* ระยะห่างรอบขอบของเซลล์ */
+            text-align: center;
+            /* ตรงกลางข้อความในเซลล์ */
+        }
+
+        .table-container {
+            max-height: 400px;
+            /* สูงสุด 300px ก่อนเริ่มเลื่อน */
+            overflow-y: scroll;
+            /* เปิดใช้งานการเลื่อนแนวแกน Y */
+        }
+
+        table {
+            width: 100%;
+            /* กว้าง 100% */
+            text-align: center;
+        }
+
+        .button {
+            text-align: right;
+
+        }
+
+        .big {
+            padding: 10px 50px;
+        }
+
+        td img {
+            max-height: 200px;
+            max-width: 30%;
+
+
+        }
+        style * {
+        margin: 0 auto;
+        font-family: sans-serif;
+    }
+
+    body {
+        margin: 0 auto;
+    }
+
+  
+
+    
+    
+
+
+    header>a.menu_icon i {
+        color: #000;
+        font-size: 40px;
+        padding-top: 5px;
+        transition: .2s ease;
+    }
+
+    
+
+    nav.menu {
+        text-align: center;
+        width: 150px;
+        min-height: calc(100vh - 121px);
+        background-color: #ebebebc1;
+        position: absolute;
+        left: -300px;
+        transition: .3s all;
+    }
+
+    nav.menu > a {
+        display: block;
+        padding: 5px;
+        margin: 15px 0 0px 20px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
+    main {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    
+
+    .menu_show {
+        left: 0 !important;
+    }
+
+    @media screen and (max-width: 425px) {
+        header h1 {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        nav.menu {
+            width: 100%;
+            left: -100%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header style=" background-color: rgb(77, 13, 104);" class=" text-light  py-3">
+        <div class="d-flex">
+            <!--icon menu -->
+            <div class="top">
+                <a href="#" class="menu_icon mx-5"><i class="material-icons">dehaze</i></a>
+            </div>
+            <!-- icon motor -->
+            <div class=" col-1">
+                <i style="color: #fff;" class="fas fa-motorcycle"></i>
+            </div>
+            <!-- MFU RIDE -->
+            <div class="col-1">
+                <a class="navbar-brand" href="#">MFU RIDE</a>
+            </div>
+            <div class="col-4">
+
+            </div>
+            <!-- icon phone -->
+            <div class="call-container col-2 mx-5 text-center">
+                <i class="fas fa-phone-alt"></i>
+                <span>call us +66**</span>
+            </div>
+            <!-- Name -->
+            <div class="col-1 ">
+                <a style="font-size: 1rem;" class="navbar-brand mx-3" href="#">Lexend Deca</a>
+            </div>
+            <!-- profile -->
+            <div class="col-1 ">
+                <i style="color: #fff;" class="fas fa-user mx-5"></i>
+            </div>
+
+
+        </div>
+    </header>
+    <nav class="menu">
+        <a href="/Project/starff/Staff_home.html" class="item_menu">HOME</a>
+        <a href="/Project/starff/Staff_dashboard.html" class="item_menu">DASHBOARD</a>
+        <a href="/Project/starff/Staff_profile.html" class="item_menu">PROFILE</a>
+        <a href="/Project/starff/Staff_history.html" class="item_menu">HISTORY</a>
+        <a href="/Project/starff/Staff_login.html" class="item_menu">LOG OUT</a>
+        
+    </nav>
+
+
+
+
+
+
+    <div class="d-flex align-items-center mt-3">
+        <h2 class="mx-5">History</h2>
+        <form action="/search" method="get" class="mx-2">
+            <input type="text" name="q" placeholder="search..." class="form-control mx-5">
+
+        </form>
+    </div>
+    <div class="divider"></div>
+    <h4 class="mx-5"> All(xxx) </h4>
+    <div class="dividerr"></div>
+
+    <div class="table-container">
+        <table id="dynamicTable" border="2">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Product Name</th>
+                    <th>Model</th>
+                    <th>Borrowed Date</th>
+                    <th>Returned Date</th>
+                    <th>Status</th>
+                    <th>Approved by</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("body").on('click', '.top', function () {
+                $("nav.menu").toggleClass("menu_show");
+            });
+        });
+    // Assuming you have an item template (you can replace the src with actual image paths)
+    const itemTemplate = {
+        imageSrc: '/Project/public/img/profile.png',
+        name: 'เราเอง',
+        productName: 'ฮอนด้าเวฟ800',
+        modelImageSrc: '/Project/photo/mo1.png',
+        borrowedDate: '21/01/23',
+        returnedDate: '22/12/24',
+        status: 'สถานะการยืม',
+        approvedBy: 'เธอ'
+    };
+    
+    function insertRows(numRows) {
+        const tableBody = document.getElementById('dynamicTable').getElementsByTagName('tbody')[0];
+    
+        for (let i = 0; i < numRows; i++) {
+            const row = tableBody.insertRow();
+            row.innerHTML = `
+                <td><img src="${itemTemplate.imageSrc}" alt="Profile Image"></td>
+                <td>${itemTemplate.name}</td>
+                <td>${itemTemplate.productName}</td>
+                <td><img src="${itemTemplate.modelImageSrc}" alt="Model Image"></td>
+                <td>${itemTemplate.borrowedDate}</td>
+                <td>${itemTemplate.returnedDate}</td>
+                <td>${itemTemplate.status}</td>
+                <td>${itemTemplate.approvedBy}</td>
+            `;
+        }
+    }
+    
+    
+    // Insert 30 rows into the table
+    insertRows(30);
+    </script>
+    <div class="dividerr"></div>
+
+    <!-- <div class="button ">
+        <a href="/Project/views/HomeUser.html"><button class="btn btn-danger mt-2 mx-5 big">Back</button></a>
+    </div> -->
+       <!-- Footer -->
+       <footer id="footer" class=" text-white text-center py-3">
+        <div>
+            <p>&copy; SERVICE IN MFU : +xxx-xxxx-xxxx</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

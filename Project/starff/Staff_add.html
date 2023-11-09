@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/public/js/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="/public/js/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_js_bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/public/css/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_css_bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/
+bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/
+bootstrap.bundle.min.js"></script>
+    <title>Home_Status</title>
+    <style>
+        /* Custom styles for the sidebar */
+        /* #sidebarMenu {
+            display: none;
+        }
+
+        @media (max-width: 992px) {
+            #sidebarMenu {
+                display: block;
+            }
+        } */
+
+        .call-container {
+            align-items: center;
+            background-color: rgb(77, 13, 104);
+            ;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: solid 1px;
+            color: #fff;
+            font-size: 10px;
+        }
+
+        #footer {
+            background-color: rgb(77, 13, 104);
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<style>
+    .motorcy {
+        max-width: 250px;
+        max-height: 120px;
+    }
+    
+    
+    style * {
+        margin: 0 auto;
+        font-family: sans-serif;
+    }
+
+    body {
+        margin: 0 auto;
+    }
+
+    .call-container {
+        align-items: center;
+        background-color: rgb(77, 13, 104);
+
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: solid 1px;
+        color: #fff;
+        font-size: 10px;
+
+    }
+    #btn-add {
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        width: 10rem;
+        color: #FFF;
+        background-color: #00a241;
+        font-size: 1.5rem;
+        transition: 0.2s;
+        
+    }
+
+    #btn-add:hover {
+        background-color: rgb(175, 175, 175)
+    }
+    #btn-back {
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        width: 10rem;
+        color: #FFF;
+        background-color: rgb(0, 111, 162);
+        font-size: 1.5rem;
+        transition: 0.2s;
+    }
+    
+    #btn-back:hover {
+        background-color: rgb(175, 175, 175)
+    }
+
+
+    header>a.menu_icon i {
+        color: #000;
+        font-size: 40px;
+        padding-top: 5px;
+        transition: .2s ease;
+    }
+
+    
+
+    nav.menu {
+        text-align: center;
+        width: 150px;
+        min-height: calc(100vh - 121px);
+        background-color: #ebebebc1;
+        position: absolute;
+        left: -300px;
+        transition: .3s all;
+    }
+
+    nav.menu > a {
+        display: block;
+        padding: 5px;
+        margin: 15px 0 0px 20px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
+    main {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    
+
+    .menu_show {
+        left: 0 !important;
+    }
+
+    @media screen and (max-width: 425px) {
+        header h1 {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        nav.menu {
+            width: 100%;
+            left: -100%;
+        }
+    }
+    img {
+       max-width: 30%; 
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <header style=" background-color: rgb(77, 13, 104);" class=" text-light  py-3">
+        <div class="d-flex">
+            <!--icon menu -->
+            <div class="top">
+                <a href="#" class="menu_icon mx-5"><i class="material-icons">dehaze</i></a>
+            </div>
+            <!-- icon motor -->
+            <div class=" col-1">
+                <i style="color: #fff;" class="fas fa-motorcycle"></i>
+            </div>
+            <!-- MFU RIDE -->
+            <div class="col-1">
+                <a class="navbar-brand" href="#">MFU RIDE</a>
+            </div>
+            <div class="col-4">
+
+            </div>
+            <!-- icon phone -->
+            <div class="call-container col-2 mx-5 text-center">
+                <i class="fas fa-phone-alt"></i>
+                <span>call us +66**</span>
+            </div>
+            <!-- Name -->
+            <div class="col-1 ">
+                <a style="font-size: 1rem;" class="navbar-brand mx-3" href="#">Lexend Deca</a>
+            </div>
+            <!-- profile -->
+            <div class="col-1 ">
+                <i style="color: #fff;" class="fas fa-user mx-5"></i>
+            </div>
+
+
+        </div>
+    </header>
+    <nav class="menu">
+        <a href="/Project/starff/Staff_home.html" class="item_menu">HOME</a>
+        <a href="/Project/starff/Staff_dashboard.html" class="item_menu">DASHBOARD</a>
+        <a href="/Project/starff/Staff_profile.html" class="item_menu">PROFILE</a>
+        <a href="/Project/starff/Staff_history.html" class="item_menu">HISTORY</a>
+        <a href="/Project/starff/Staff_login.html" class="item_menu">LOG OUT</a>
+        
+    </nav>
+    <div>
+        <p></p>
+    </div>
+    <!-- main -->
+
+    <main class="row">
+        <!-- left side -->
+        <div class="col-2">
+            <div class="container d-flex flex-column  p-3 m-5">
+                <h4 class="text-info my-4 mx-2 ">MANAGE</h4>
+                <a href="/Project/starff/Staff_add.html" class="text-decoration-none text-dark a-manage">
+                    <div class="link-icon d-inline-flex my-3">
+                        <i class="fa-solid fa-plus fs-2 mx-2"></i>
+                        <h6 class="fs-3">ADD</h6>
+                    </div>
+                </a>
+                <a href="/Project/starff/Staff_delete.html" class="text-decoration-none text-dark a-manage">
+                    <div class="link-icon d-inline-flex my-3">
+                        <i class="fa-solid fa-x fs-2 mx-2"></i>
+                        <h6 class="fs-3">DELETE</h6>
+                    </div>
+                </a>
+                <a href="/Project/starff/Staff_edit.html" class="text-decoration-none text-dark a-manage">
+                    <div class="link-icon d-inline-flex my-3">
+                        <i class="fa-regular fa-pen-to-square fs-2 mx-2"></i>
+                        <h6 class="fs-3">EDIT</h6>
+                    </div>
+                </a>
+                <a href="/Project/starff/Staff_disable.html" class="text-decoration-none text-dark a-manage">
+                    <div class="link-icon d-inline-flex my-3">
+                        <i class="fa-solid fa-eye-slash fs-2 mx-2"></i>
+                        <h6 class="fs-3">DISABLE</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- mid side -->
+        <div class="col-7">
+            <div class="container mx-5">
+                <!-- Picture header -->
+
+                <div class="container">
+
+            <!-- Image upload form -->
+            <form action="/path-to-server-endpoint" method="post" enctype="multipart/form-data">
+                
+                <!-- Image preview container -->
+                <div class="image-container mb-3 text-center">
+                    <img id="profileImage" src="/Project/photo/Add_Image_icon-icons.com_54218.png" alt="Profile Image" style="width: 20%;">
+                </div>
+                
+                <!-- File input -->
+                <div class="mb-3">
+                    <label for="imageUpload" class="form-label">Select image:</label>
+                    <input type="file" class="form-control" id="imageUpload" name="profilePicture" accept="image/*" required>
+                </div>
+                
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
+                </div>
+                <br>
+                <h5 class="opacity-50">Brand</h5>
+                <input type="text" class="form-control bg-light border-0">
+                <h5 class="opacity-50">Model</h5>
+                <input type="text" class="form-control bg-light border-0">
+                <h5 class="opacity-50">Status</h5>
+                <select class="form-select bg-light border-0 text-secondary" id="exampleSelect">
+                    <option value="option1">Avalable</option>
+                    <option value="option2">Borrowed</option>
+                    <option value="option3">Disable</option>
+                </select>
+                
+            </div>
+        </div>
+        <!-- Latest Ports  -->
+        <div class="col-3 text-center mb-5">
+            
+            <div class="container mt-3" id="warp-btn-delete">
+                <button class="" id="btn-add"><a class="text-decoration-none" href="/Project/starff/Staff_home.html">ADD</a></button>
+            </div>
+            <div class="container mt-3 " id="warp-btn-delete">
+                <button class="" id="btn-back"><a class="text-decoration-none" href="/Project/starff/Staff_home.html">BACK</a></button>
+            </div>
+        </div>
+    </main>
+
+      <!-- Footer -->
+      <footer id="footer" class=" text-white text-center py-3">
+        <div>
+            <p>&copy; SERVICE IN MFU : +xxx-xxxx-xxxx</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+         document.getElementById('imageUpload').addEventListener('change', function (event) {
+        const output = document.getElementById('profileImage');
+        output.src = URL.createObjectURL(event.target.files[0]);
+        output.onload = function() {
+            URL.revokeObjectURL(output.src) // free memory
+        }
+    });
+        $(document).ready(function () {
+            $("body").on('click', '.top', function () {
+                $("nav.menu").toggleClass("menu_show");
+            });
+        });
+    </script>
+
+</html>
