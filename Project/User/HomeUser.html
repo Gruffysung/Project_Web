@@ -8,70 +8,46 @@
     <script src="/public/js/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_js_bootstrap.min.js"></script>
     <link rel="stylesheet" href="/public/css/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_css_bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/
-bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/
-bootstrap.bundle.min.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/Project/public/css/hamberger.css">
+    <link rel="stylesheet" href="/Project/public/css/navfoot.css">
     <title>Home_Status</title>
-    <style>
-        /* Custom styles for the sidebar */
-        /* #sidebarMenu {
-            display: none;
-        }
-
-        @media (max-width: 992px) {
-            #sidebarMenu {
-                display: block;
-            }
-        } */
-
-        .call-container {
-            align-items: center;
-            background-color: rgb(77, 13, 104);
-            ;
-            padding: 10px 20px;
-            border-radius: 30px;
-            border: solid 1px;
-            color: #fff;
-            font-size: 10px;
-        }
-
-        #footer {
-            background-color: rgb(77, 13, 104);
-            position: fixed;
-            bottom: 0;
-            left: 0px;
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-            color: #FFFFFF;
-        }
-    </style>
+   
 </head>
 
 <style>
-    #M1{
-        background: linear-gradient(to right, rgb(255, 255, 255) , rgb(90, 16, 228)); /* Standard syntax */
+    #M1 {
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(90, 16, 228));
+        /* Standard syntax */
     }
-    #M2{
-        background: linear-gradient(to right, rgb(255, 255, 255) , rgb(146, 142, 142)); /* Standard syntax */
+
+    #M2 {
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(146, 142, 142));
+        /* Standard syntax */
     }
-    #M3{
-        background: linear-gradient(to right, rgb(255, 255, 255) , rgb(146, 142, 142)); /* Standard syntax */
+
+    #M3 {
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(146, 142, 142));
+        /* Standard syntax */
     }
-    #M4{
-        background: linear-gradient(to right, rgb(255, 255, 255) , rgb(146, 142, 142)); /* Standard syntax */
+
+    #M4 {
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(146, 142, 142));
+        /* Standard syntax */
     }
-    #M5{
-        background: linear-gradient(to right, rgb(255, 255, 255) , rgb(90, 16, 228)); /* Standard syntax */
+
+    #M5 {
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(90, 16, 228));
+        /* Standard syntax */
     }
 
     .motorcy {
         max-width: 250px;
         max-height: 120px;
     }
-    
+
     #btn-delete {
         cursor: pointer;
         border: none;
@@ -89,82 +65,6 @@ bootstrap.bundle.min.js"></script>
 
     main {
         margin-bottom: 50px;
-    }
-    style * {
-        margin: 0 auto;
-        font-family: sans-serif;
-    }
-
-    body {
-        margin: 0 auto;
-    }
-
-    .call-container {
-        align-items: center;
-        background-color: rgb(77, 13, 104);
-
-        padding: 10px 20px;
-        border-radius: 30px;
-        border: solid 1px;
-        color: #fff;
-        font-size: 10px;
-
-    }
-
-    
-    
-
-
-    header>a.menu_icon i {
-        color: #000;
-        font-size: 40px;
-        padding-top: 5px;
-        transition: .2s ease;
-    }
-
-    
-
-    nav.menu {
-        text-align: center;
-        width: 150px;
-        min-height: calc(100vh - 121px);
-        background-color: #ebebebc1;
-        position: absolute;
-        left: -300px;
-        transition: .3s all;
-    }
-
-    nav.menu > a {
-        display: block;
-        padding: 5px;
-        margin: 15px 0 0px 20px;
-        color: #000000;
-        text-transform: uppercase;
-    }
-
-    main {
-        width: 100%;
-        padding: 30px;
-        box-sizing: border-box;
-    }
-
-    
-
-    .menu_show {
-        left: 0 !important;
-    }
-
-    @media screen and (max-width: 425px) {
-        header h1 {
-            font-size: 16px;
-        }
-    }
-
-    @media screen and (max-width: 360px) {
-        nav.menu {
-            width: 100%;
-            left: -100%;
-        }
     }
 </style>
 
@@ -207,16 +107,17 @@ bootstrap.bundle.min.js"></script>
     <nav class="menu">
         <a href="HomeUser.html" class="item_menu">HOME</a>
         <a href="request.html" class="item_menu">REQUEST</a>
+        <a href="history.html" class="item_menu">HISTORY</a>
         <a href="Profile_User.html" class="item_menu">PROFILE</a>
-        <a href="/Project/Auth/signin.php" class="item_menu">LOG OUT</a>
-        
+        <a href="login.html" class="item_menu">LOG OUT</a>
+
     </nav>
 
     <!-- main -->
 
     <main class="row">
         <!-- left side -->
-        
+
         <!-- mid side -->
         <div class="col-9">
             <div class="container mx-5">
@@ -225,13 +126,15 @@ bootstrap.bundle.min.js"></script>
                     <img src="/Project/public/img/Rectangle 71.jpg" alt="headerPic" class="motorcycle  w-75">
                 </div>
                 <!-- grid list -->
-                <div class="container mt-5 p-3  w-100" style="background: url('/Project/public/img/Rectangle 111.png');">
+                <div class="container mt-5 p-3  w-100"
+                    style="background: url('/Project/public/img/Rectangle 111.png');">
                     <div class="row my-3 ">
                         <div class="col-4">
                             <div class="container boxGrid   text-center">
                                 <!-- Picture -->
-                                <a href="status.html"><img src="/Project/public/img/M5.png" alt="fa-motorcycle" class="motorcy"></a>
-                                
+                                <a href="status.html"><img src="/Project/public/img/M5.png" alt="fa-motorcycle"
+                                        class="motorcy"></a>
+
                                 <!-- Status -->
                                 <div id="M1" class="container bg-opacity-75 rounded   bottomText">
                                     <h5 class="pt-2">Honda LEAD125</h5>
@@ -242,8 +145,9 @@ bootstrap.bundle.min.js"></script>
                         <div class="col-4">
                             <div class="container boxGrid   text-center">
                                 <!-- Picture -->
-                                <a href="status.html"><img src="/Project/public/img/M2.png" alt="fa-motorcycle" class="motorcy"></a>
-                                
+                                <a href="status.html"><img src="/Project/public/img/M2.png" alt="fa-motorcycle"
+                                        class="motorcy"></a>
+
                                 <!-- Status -->
                                 <div id="M2" class="container bg-dark bg-opacity-25 rounded   bottomText">
                                     <h5 class="pt-2">Honda LEAD125</h5>
@@ -254,8 +158,9 @@ bootstrap.bundle.min.js"></script>
                         <div class="col-4">
                             <div class="container boxGrid   text-center">
                                 <!-- Picture -->
-                                <a href="status.html"><img src="/Project/public/img/M3.png" alt="fa-motorcycle" class="motorcy"></a>
-                                
+                                <a href="status.html"><img src="/Project/public/img/M3.png" alt="fa-motorcycle"
+                                        class="motorcy"></a>
+
                                 <!-- Status -->
                                 <div id="M3" class="container bg-dark bg-opacity-25 rounded   bottomText">
                                     <h5 class="pt-2">Honda LEAD125</h5>
@@ -268,8 +173,9 @@ bootstrap.bundle.min.js"></script>
                                 <div class="col-4">
                                     <div class="container boxGrid text-center mb-0">
                                         <!-- Picture -->
-                                        <a href="status.html"><img src="/Project/public/img/M4.png" alt="fa-motorcycle" class="motorcy mx-3"></a>
-                                        
+                                        <a href="status.html"><img src="/Project/public/img/M4.png" alt="fa-motorcycle"
+                                                class="motorcy mx-3"></a>
+
                                         <!-- Status -->
                                         <div id="M4" class="container bg-dark bg-opacity-25 rounded   bottomText">
                                             <h5 class="pt-2">Honda LEAD125</h5>
@@ -280,8 +186,9 @@ bootstrap.bundle.min.js"></script>
                                 <div class="col-4">
                                     <div class="container boxGrid   text-center">
                                         <!-- Picture -->
-                                        <a href="status.html"><img src="/Project/public/img/M5.png" alt="fa-motorcycle" class="motorcy"></a>
-                                        
+                                        <a href="status.html"><img src="/Project/public/img/M5.png" alt="fa-motorcycle"
+                                                class="motorcy"></a>
+
                                         <!-- Status -->
                                         <div id="M5" class="container bg-primary bg-opacity-75 rounded   bottomText">
                                             <h5 class="pt-2">Honda LEAD125</h5>
@@ -292,8 +199,9 @@ bootstrap.bundle.min.js"></script>
                                 <div class="col-4">
                                     <div class="d-none container boxGrid  text-center">
                                         <!-- Picture -->
-                                        <a href="status.html"><img src="/Project/public/img/M3.png" alt="fa-motorcycle" class="motorcy"></a>
-                                        
+                                        <a href="status.html"><img src="/Project/public/img/M3.png" alt="fa-motorcycle"
+                                                class="motorcy"></a>
+
                                         <!-- Status -->
                                         <div class="container bg-primary bg-opacity-75 rounded   bottomText">
                                             <h5 class="pt-2">Honda LEAD125</h5>
@@ -316,17 +224,19 @@ bootstrap.bundle.min.js"></script>
         </div>
     </main>
 
- <!-- Footer -->
- <footer id="footer" class=" text-white text-center py-3">
+    <!-- Footer -->
     <div>
-        <a href="HomeUser.html">Home</a>
-        |
-        <a href="list.html">Booking</a>
-        |
-        <a href="#">Contact</a>
-        <p>&copy; SERVICE IN MFU : +xxx-xxxx-xxxx</p>
+        <footer id="footer" class=" text-white text-center py-3">
+            <div>
+                <a href="HomeUser.html">Home</a>
+                |
+                <a href="list.html">Booking</a>
+                |
+                <a href="#">Contact</a>
+                <p>&copy; SERVICE IN MFU : +xxx-xxxx-xxxx</p>
+            </div>
+        </footer>
     </div>
-</footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 

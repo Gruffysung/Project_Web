@@ -8,46 +8,15 @@
     <script src="/public/js/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_js_bootstrap.min.js"></script>
     <link rel="stylesheet" href="/public/css/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_css_bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/
-bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/
-bootstrap.bundle.min.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/Project/public/css/hamberger.css">    
+    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+    <link rel="stylesheet" href="/Project/public/css/navfoot.css">
+  </svg>
     <title>Home_Status</title>
-    <style>
-        /* Custom styles for the sidebar */
-        /* #sidebarMenu {
-            display: none;
-        }
-
-        @media (max-width: 992px) {
-            #sidebarMenu {
-                display: block;
-            }
-        } */
-
-        .call-container {
-            align-items: center;
-            background-color: rgb(77, 13, 104);
-            ;
-            padding: 10px 20px;
-            border-radius: 30px;
-            border: solid 1px;
-            color: #fff;
-            font-size: 10px;
-        }
-
-        #footer {
-            background-color: rgb(77, 13, 104);
-            position: fixed;
-            bottom: 0;
-            left: 0px;
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-            color: #FFFFFF;
-        }
-    </style>
+    
 </head>
 
 <style>
@@ -90,82 +59,6 @@ bootstrap.bundle.min.js"></script>
     main {
         margin-bottom: 50px;
     }
-    style * {
-        margin: 0 auto;
-        font-family: sans-serif;
-    }
-
-    body {
-        margin: 0 auto;
-    }
-
-    .call-container {
-        align-items: center;
-        background-color: rgb(77, 13, 104);
-
-        padding: 10px 20px;
-        border-radius: 30px;
-        border: solid 1px;
-        color: #fff;
-        font-size: 10px;
-
-    }
-
-    
-    
-
-
-    header>a.menu_icon i {
-        color: #000;
-        font-size: 40px;
-        padding-top: 5px;
-        transition: .2s ease;
-    }
-
-    
-
-    nav.menu {
-        text-align: center;
-        width: 150px;
-        min-height: calc(100vh - 121px);
-        background-color: #ebebebc1;
-        position: absolute;
-        left: -300px;
-        transition: .3s all;
-    }
-
-    nav.menu > a {
-        display: block;
-        padding: 5px;
-        margin: 15px 0 0px 20px;
-        color: #000000;
-        text-transform: uppercase;
-    }
-
-    main {
-        width: 100%;
-        padding: 30px;
-        box-sizing: border-box;
-    }
-
-    
-
-    .menu_show {
-        left: 0 !important;
-    }
-
-    @media screen and (max-width: 425px) {
-        header h1 {
-            font-size: 16px;
-        }
-    }
-
-    @media screen and (max-width: 360px) {
-        nav.menu {
-            width: 100%;
-            left: -100%;
-        }
-    }
 </style>
 
 <body>
@@ -207,9 +100,8 @@ bootstrap.bundle.min.js"></script>
     <nav class="menu">
         <a href="/Project/starff/Staff_home.html" class="item_menu">HOME</a>
         <a href="/Project/starff/Staff_dashboard.html" class="item_menu">DASHBOARD</a>
-        <a href="/Project/starff/Staff_profile.html" class="item_menu">PROFILE</a>
         <a href="/Project/starff/Staff_history.html" class="item_menu">HISTORY</a>
-        <a href="/Project/Auth/signin.php" class="item_menu">LOG OUT</a>
+        <a href="/Project/starff/Staff_login.html" class="item_menu">LOG OUT</a>
         
     </nav>
 
@@ -219,38 +111,9 @@ bootstrap.bundle.min.js"></script>
     <!-- main -->
 
     <main class="row">
-        <!-- left side -->
-        <div class="col-2">
-            <div class="container d-flex flex-column  p-3 m-5">
-                <h4 class="text-info my-4 mx-2 ">MANAGE</h4>
-                <a href="/Project/starff/Staff_add.html" class="text-decoration-none text-dark a-manage">
-                    <div class="link-icon d-inline-flex my-3">
-                        <i class="fa-solid fa-plus fs-2 mx-2"></i>
-                        <h6 class="fs-3">ADD</h6>
-                    </div>
-                </a>
-                <a href="/Project/starff/Staff_delete.html" class="text-decoration-none text-dark a-manage">
-                    <div class="link-icon d-inline-flex my-3">
-                        <i class="fa-solid fa-x fs-2 mx-2"></i>
-                        <h6 class="fs-3">DELETE</h6>
-                    </div>
-                </a>
-                <a href="/Project/starff/Staff_edit.html" class="text-decoration-none text-dark a-manage">
-                    <div class="link-icon d-inline-flex my-3">
-                        <i class="fa-regular fa-pen-to-square fs-2 mx-2"></i>
-                        <h6 class="fs-3">EDIT</h6>
-                    </div>
-                </a>
-                <a href="/Project/starff/Staff_disable.html" class="text-decoration-none text-dark a-manage">
-                    <div class="link-icon d-inline-flex my-3">
-                        <i class="fa-solid fa-eye-slash fs-2 mx-2"></i>
-                        <h6 class="fs-3">DISABLE</h6>
-                    </div>
-                </a>
-            </div>
-        </div>
+       
         <!-- mid side -->
-        <div class="col-7">
+        <div class="col-8">
             <div class="container mx-5">
                 <!-- Picture header -->
                 <div class="container my-4 text-center">
@@ -262,7 +125,7 @@ bootstrap.bundle.min.js"></script>
                         <div class="col-4">
                             <div class="container boxGrid   text-center">
                                 <!-- Picture -->
-                                <img src="/Project/public/img/M5.png" alt="fa-motorcycle" class="motorcy">
+                                <a href="/Project/starff/Staff_edit.html"><img src="/Project/public/img/M5.png" alt="fa-motorcycle" class="motorcy"></a>
                                 <!-- Status -->
                                 <div id="M1" class="container bg-opacity-75 rounded   bottomText">
                                     <h5 class="pt-2">Honda LEAD125</h5>
@@ -273,7 +136,7 @@ bootstrap.bundle.min.js"></script>
                         <div class="col-4">
                             <div class="container boxGrid   text-center">
                                 <!-- Picture -->
-                                <img src="/Project/public/img/M2.png" alt="fa-motorcycle" class="motorcy">
+                                <a href="/Project/starff/Staff_edit.html"><img src="/Project/public/img/M2.png" alt="fa-motorcycle" class="motorcy"></a>
                                 <!-- Status -->
                                 <div id="M2" class="container bg-dark bg-opacity-25 rounded   bottomText">
                                     <h5 class="pt-2">Honda LEAD125</h5>
@@ -284,7 +147,7 @@ bootstrap.bundle.min.js"></script>
                         <div class="col-4">
                             <div class="container boxGrid   text-center">
                                 <!-- Picture -->
-                                <img src="/Project/public/img/M3.png" alt="fa-motorcycle" class="motorcy">
+                                <a href="/Project/starff/Staff_edit.html"><img src="/Project/public/img/M3.png" alt="fa-motorcycle" class="motorcy"></a>
                                 <!-- Status -->
                                 <div id="M3" class="container bg-dark bg-opacity-25 rounded   bottomText">
                                     <h5 class="pt-2">Honda LEAD125</h5>
@@ -297,7 +160,7 @@ bootstrap.bundle.min.js"></script>
                                 <div class="col-4">
                                     <div class="container boxGrid text-center mb-0">
                                         <!-- Picture -->
-                                        <img src="/Project/public/img/M4.png" alt="fa-motorcycle" class="motorcy mx-3">
+                                        <a href="/Project/starff/Staff_edit.html"><img src="/Project/public/img/M4.png" alt="fa-motorcycle" class="motorcy mx-3"></a>
                                         <!-- Status -->
                                         <div id="M4" class="container bg-dark bg-opacity-25 rounded   bottomText">
                                             <h5 class="pt-2">Honda LEAD125</h5>
@@ -308,7 +171,7 @@ bootstrap.bundle.min.js"></script>
                                 <div class="col-4">
                                     <div class="container boxGrid   text-center">
                                         <!-- Picture -->
-                                        <img src="/Project/public/img/M5.png" alt="fa-motorcycle" class="motorcy">
+                                        <a href="/Project/starff/Staff_edit.html"><img src="/Project/public/img/M5.png" alt="fa-motorcycle" class="motorcy"></a>
                                         <!-- Status -->
                                         <div id="M5" class="container bg-primary bg-opacity-75 rounded   bottomText">
                                             <h5 class="pt-2">Honda LEAD125</h5>
@@ -319,13 +182,18 @@ bootstrap.bundle.min.js"></script>
                                 <div class="col-4">
                                     <div class="d-none container boxGrid  text-center">
                                         <!-- Picture -->
-                                        <img src="/Project/public/img/M3.png" alt="fa-motorcycle" class="motorcy">
+                                        <a href="/Project/starff/Staff_edit.html"><img src="/Project/public/img/M3.png" alt="fa-motorcycle" class="motorcy"></a>
                                         <!-- Status -->
                                         <div class="container bg-primary bg-opacity-75 rounded   bottomText">
                                             <h5 class="pt-2">Honda LEAD125</h5>
                                             <p class="text-end">avaliable</p>
                                         </div>
                                     </div>
+                                </div>
+                                <div style="margin-left: 830px;" >
+                                    <a href="/Project/starff/Staff_add.html"><svg xmlns="http://www.w3.org/2000/svg" style="background-color: gray;" width="40" height="40" fill="currentColor" class="bi bi-plus-lg rounded text-white" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                    </svg></a>
                                 </div>
                             </div>
                         </div>
@@ -334,7 +202,7 @@ bootstrap.bundle.min.js"></script>
             </div>
         </div>
         <!-- Latest Ports  -->
-        <div class="col-3 text-center mb-5">
+        <div class="col-2 text-center mb-5">
             <div class="container bg-light mt-5 w-50 text-center p-3" style="min-height: 80vh;">
                 <h4 id="Latest">LATEST PORTS</h4>
                 <div class="border"></div>
@@ -343,11 +211,13 @@ bootstrap.bundle.min.js"></script>
     </main>
 
       <!-- Footer -->
-      <footer id="footer" class=" text-white text-center py-3">
-        <div>
-            <p>&copy; SERVICE IN MFU : +xxx-xxxx-xxxx</p>
-        </div>
-    </footer>
+      <div>
+        <footer id="footer" class=" text-white text-center py-3">
+         <div>
+             <p>&copy; SERVICE IN MFU : +xxx-xxxx-xxxx</p>
+         </div>
+     </footer> 
+     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
